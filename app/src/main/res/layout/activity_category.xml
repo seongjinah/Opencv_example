@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+
+    <TextView
+        android:id="@+id/category_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/category_gallery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="OpenCV를 이용하여 변형할\n영상 종류를 선택하세요."
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/category_gallery"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:text="갤러리"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"
+
+        />
+
+    <Button
+        android:id="@+id/category_camera"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/category_gallery"
+        android:layout_marginTop="20dp"
+        android:text="카메라"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
